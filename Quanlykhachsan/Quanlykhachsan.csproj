@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{025ACB8A-CA23-4B41-B3D2-CEC68F2D5F2F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Quanlykhachsan</RootNamespace>
+    <AssemblyName>Quanlykhachsan</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Baocaohoadon.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Baocaohoadon.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Baocaokhachhang.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Baocaokhachhang.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Baocaonhanvien.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Baocaonhanvien.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Connectdata.cs" />
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dangnhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dangnhap.Designer.cs">
+      <DependentUpon>Dangnhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="datasetKhachhang.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>datasetKhachhang.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FormBaocaohoadon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBaocaohoadon.Designer.cs">
+      <DependentUpon>FormBaocaohoadon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBaocaokhachhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBaocaokhachhang.Designer.cs">
+      <DependentUpon>FormBaocaokhachhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBaocaonhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBaocaonhanvien.Designer.cs">
+      <DependentUpon>FormBaocaonhanvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDatphong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDatphong.Designer.cs">
+      <DependentUpon>FormDatphong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDichvu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDichvu.Designer.cs">
+      <DependentUpon>FormDichvu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHoadon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHoadon.Designer.cs">
+      <DependentUpon>FormHoadon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKhachhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKhachhang.Designer.cs">
+      <DependentUpon>FormKhachhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNhanvien.Designer.cs">
+      <DependentUpon>FormNhanvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPhong.Designer.cs">
+      <DependentUpon>FormPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQuanly.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQuanly.Designer.cs">
+      <DependentUpon>FormQuanly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormThue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormThue.Designer.cs">
+      <DependentUpon>FormThue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTra.Designer.cs">
+      <DependentUpon>FormTra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PHONGTRONG.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PHONGTRONG.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QUANLYKHACHSANDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QUANLYKHACHSANDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TABLEPHONG2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TABLEPHONG2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TBLDANGKY.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TBLDANGKY.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TBLDANGKY_GIAPHONG.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TBLDANGKY_GIAPHONG.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TBLDICHVU.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TBLDICHVU.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TBLHOADON.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TBLHOADON.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TBLHOADONCOTRANGTHAI.cs">
+      <DependentUpon>TBLHOADONCOTRANGTHAI.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TBLHOADONCOTRANGTHAI.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TBLHOADONCOTRANGTHAI.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TBLKHACH.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TBLKHACH.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TBLPHONG.cs">
+      <DependentUpon>TBLPHONG.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TBLPHONG.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TBLPHONG.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Baocaohoadon.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Baocaohoadon.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Baocaokhachhang.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Baocaokhachhang.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Baocaonhanvien.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Baocaonhanvien.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dangnhap.resx">
+      <DependentUpon>Dangnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBaocaohoadon.resx">
+      <DependentUpon>FormBaocaohoadon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBaocaokhachhang.resx">
+      <DependentUpon>FormBaocaokhachhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBaocaonhanvien.resx">
+      <DependentUpon>FormBaocaonhanvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDatphong.resx">
+      <DependentUpon>FormDatphong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDichvu.resx">
+      <DependentUpon>FormDichvu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHoadon.resx">
+      <DependentUpon>FormHoadon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKhachhang.resx">
+      <DependentUpon>FormKhachhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNhanvien.resx">
+      <DependentUpon>FormNhanvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPhong.resx">
+      <DependentUpon>FormPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQuanly.resx">
+      <DependentUpon>FormQuanly.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormThue.resx">
+      <DependentUpon>FormThue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTra.resx">
+      <DependentUpon>FormTra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="datasetKhachhang.xsc">
+      <DependentUpon>datasetKhachhang.xsd</DependentUpon>
+    </None>
+    <None Include="datasetKhachhang.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>datasetKhachhang.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="datasetKhachhang.xss">
+      <DependentUpon>datasetKhachhang.xsd</DependentUpon>
+    </None>
+    <None Include="PHONGTRONG.xsc">
+      <DependentUpon>PHONGTRONG.xsd</DependentUpon>
+    </None>
+    <None Include="PHONGTRONG.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PHONGTRONG.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PHONGTRONG.xss">
+      <DependentUpon>PHONGTRONG.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="QUANLYKHACHSANDataSet1.xsc">
+      <DependentUpon>QUANLYKHACHSANDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QUANLYKHACHSANDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QUANLYKHACHSANDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QUANLYKHACHSANDataSet1.xss">
+      <DependentUpon>QUANLYKHACHSANDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="TABLEPHONG2.xsc">
+      <DependentUpon>TABLEPHONG2.xsd</DependentUpon>
+    </None>
+    <None Include="TABLEPHONG2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TABLEPHONG2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TABLEPHONG2.xss">
+      <DependentUpon>TABLEPHONG2.xsd</DependentUpon>
+    </None>
+    <None Include="TBLDANGKY.xsc">
+      <DependentUpon>TBLDANGKY.xsd</DependentUpon>
+    </None>
+    <None Include="TBLDANGKY.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TBLDANGKY.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TBLDANGKY.xss">
+      <DependentUpon>TBLDANGKY.xsd</DependentUpon>
+    </None>
+    <None Include="TBLDANGKY_GIAPHONG.xsc">
+      <DependentUpon>TBLDANGKY_GIAPHONG.xsd</DependentUpon>
+    </None>
+    <None Include="TBLDANGKY_GIAPHONG.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TBLDANGKY_GIAPHONG.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TBLDANGKY_GIAPHONG.xss">
+      <DependentUpon>TBLDANGKY_GIAPHONG.xsd</DependentUpon>
+    </None>
+    <None Include="TBLDICHVU.xsc">
+      <DependentUpon>TBLDICHVU.xsd</DependentUpon>
+    </None>
+    <None Include="TBLDICHVU.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TBLDICHVU.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TBLDICHVU.xss">
+      <DependentUpon>TBLDICHVU.xsd</DependentUpon>
+    </None>
+    <None Include="TBLHOADON.xsc">
+      <DependentUpon>TBLHOADON.xsd</DependentUpon>
+    </None>
+    <None Include="TBLHOADON.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TBLHOADON.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TBLHOADON.xss">
+      <DependentUpon>TBLHOADON.xsd</DependentUpon>
+    </None>
+    <None Include="TBLHOADONCOTRANGTHAI.xsc">
+      <DependentUpon>TBLHOADONCOTRANGTHAI.xsd</DependentUpon>
+    </None>
+    <None Include="TBLHOADONCOTRANGTHAI.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TBLHOADONCOTRANGTHAI.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TBLHOADONCOTRANGTHAI.xss">
+      <DependentUpon>TBLHOADONCOTRANGTHAI.xsd</DependentUpon>
+    </None>
+    <None Include="TBLKHACH.xsc">
+      <DependentUpon>TBLKHACH.xsd</DependentUpon>
+    </None>
+    <None Include="TBLKHACH.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TBLKHACH.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TBLKHACH.xss">
+      <DependentUpon>TBLKHACH.xsd</DependentUpon>
+    </None>
+    <None Include="TBLPHONG.xsc">
+      <DependentUpon>TBLPHONG.xsd</DependentUpon>
+    </None>
+    <None Include="TBLPHONG.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TBLPHONG.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TBLPHONG.xss">
+      <DependentUpon>TBLPHONG.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
